@@ -1,0 +1,7 @@
+PatientID:1
+RoomCharges:2000.00
+Medicines:150.00
+TreatmentCharges:500.00
+Discount:10.00
+Total:2385.00
+Date:2025-12-07 15:16:08

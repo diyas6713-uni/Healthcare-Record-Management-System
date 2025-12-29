@@ -1,0 +1,59 @@
+ENTITY – RELATIONSHIP DIAGRAM
+Healthcare Record Management System
+--------------------------------------------------
+
+ENTITIES:
+1. PATIENT
+2. DOCTOR
+3. BILL
+4. HISTORY
+
+
+RELATIONSHIPS (Directional Text Description):
+
+1. PATIENT – DOCTOR
+   Relationship: Treated By
+   A Patient (P) is treated by a Doctor (D).
+   A Doctor (D) can treat multiple Patients (P).
+   Cardinality: Many Patients → One Doctor
+
+2. PATIENT – BILL
+   Relationship: Generates
+   A Patient (P) generates one or more Bills (B).
+   Each Bill (B) belongs to one Patient (P).
+   Cardinality: One Patient → Many Bills
+
+3. DOCTOR – BILL
+   Relationship: Issued By
+   A Bill (B) is issued by a Doctor (D).
+   A Doctor (D) can issue multiple Bills (B).
+   Cardinality: One Doctor → Many Bills
+
+4. DOCTOR – HISTORY
+   Relationship: Consulted For
+   A Doctor (D) is consulted for medical History (H).
+   Each History (H) is associated with one Doctor (D).
+   Cardinality: One Doctor → Many Histories
+
+5. HISTORY – BILL
+   Relationship: Generates
+   Medical History (H) generates Bills (B).
+   Each Bill (B) is generated from History (H).
+   Cardinality: One History → Many Bills
+
+
+NOTATIONS USED:
+P – Multiple Patients
+D – Multiple Doctors
+B – Multiple Bills
+H – Multiple Histories
+
+
+SUMMARY:
+Patients are treated by doctors, their consultation histories are recorded,
+histories generate billing information, and bills are issued by doctors for
+patients. This ER model ensures structured data management and relational
+integrity across the healthcare system.
+
+--------------------------------------------------
+END OF ER DIAGRAM DESCRIPTION

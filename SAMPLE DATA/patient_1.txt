@@ -1,0 +1,10 @@
+ID:1
+Name:Ajay
+Age:35
+Disease:Fever
+Type:IPD
+AdmissionDate:2025-01-10
+Room:General
+Income:500000
+IncomeCategory:2
+DoctorID:0

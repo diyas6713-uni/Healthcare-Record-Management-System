@@ -1,0 +1,127 @@
+FLOWCHART – DIRECTIONAL TEXT FORMAT
+Healthcare Record Management System
+--------------------------------------------------
+
+START
+
+|
+v
+Initialize System
+- Initialize Patient ID
+- Initialize Doctor ID
+- Read Master Files (Patients, Doctors, Bills)
+
+|
+v
+Display Main Menu
+
+Options:
+1. Patient Module
+2. Doctor Module
+3. Billing Module
+4. Search & Filters Module
+5. Statistics Module
+6. Exit
+
+|
+v
+Decision: User Choice?
+
+--------------------------------------------------
+IF Choice = PATIENT MODULE
+--------------------------------------------------
+
+Display Patient Menu
+
+Options:
+1. Add Patient
+2. View / Search / Update / Delete Patient
+3. Assign Doctor
+4. Treatment
+
+Decision: Patient Operation?
+
+----------------------------------
+IF Operation = ADD PATIENT
+----------------------------------
+Generate Patient ID
+Enter Patient Details
+Save Patient Data to File
+Return to Patient Menu
+
+----------------------------------
+IF Operation = VIEW / SEARCH / UPDATE / DELETE PATIENT
+----------------------------------
+Enter Patient ID
+Decision: Record Exists?
+
+- YES  -> Perform Selected Operation
+- NO   -> Display "Record Not Found"
+
+Return to Patient Menu
+
+----------------------------------
+IF Operation = ASSIGN DOCTOR
+----------------------------------
+Select Doctor
+Update Patient File
+Return to Patient Menu
+
+----------------------------------
+IF Operation = TREATMENT
+----------------------------------
+Enter / View Treatment Details
+Save or Display Treatment Data
+Return to Patient Menu
+
+Return to Main Menu
+
+--------------------------------------------------
+IF Choice = DOCTOR MODULE
+--------------------------------------------------
+
+Display Doctor Menu
+Decision: Doctor Operation?
+(Add / View / Update / Delete)
+
+Modify Doctor File
+Display Result
+Return to Main Menu
+
+--------------------------------------------------
+IF Choice = BILLING MODULE
+--------------------------------------------------
+
+Enter Patient ID and Charges
+Calculate Total Bill
+Generate Bill File
+Display Bill Amount
+Return to Main Menu
+
+--------------------------------------------------
+IF Choice = SEARCH AND FILTERS MODULE
+--------------------------------------------------
+
+Enter Search Criteria
+Filter Records
+Display Results
+Return to Main Menu
+
+--------------------------------------------------
+IF Choice = STATISTICS MODULE
+--------------------------------------------------
+
+Compute Totals and Analysis
+Display Statistics
+Return to Main Menu
+
+--------------------------------------------------
+IF Choice = EXIT
+--------------------------------------------------
+
+Save All Data
+STOP
+
+--------------------------------------------------
+END OF FLOWCHART
+--------------------------------------------------
